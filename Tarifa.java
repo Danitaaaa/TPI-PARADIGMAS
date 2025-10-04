@@ -5,16 +5,22 @@ public class Tarifa {
 
     public Tarifa() {}
 
+    public Tarifa(double importeBase, String fechaDesde, String fechaHasta) {
+        this.importeBase = importeBase;
+        this.fechaDesde = fechaDesde;
+        this.fechaHasta = fechaHasta;
+    }
+
     public double getImporteBase() {
-        return importeBase;
+        return this.importeBase;
     }
 
     public String getFechaDesde() {
-        return fechaDesde;
+        return this.fechaDesde;
     }
 
     public String getFechaHasta() {
-        return fechaHasta;
+        return this.fechaHasta;
     }
 
     // Setters
@@ -30,6 +36,4 @@ public class Tarifa {
         this.fechaHasta = fechaHasta;
     }
 
-    public void crear() {}
-    public void mostrar() {}
 }

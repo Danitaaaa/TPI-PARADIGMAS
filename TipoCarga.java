@@ -2,10 +2,12 @@ public class TipoCarga {
     private String nombre;
 
     public TipoCarga() {}
-
+    public TipoCarga(String nombre) {
+        this.nombre = nombre;
+    }
     // Getter
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
     // Setter

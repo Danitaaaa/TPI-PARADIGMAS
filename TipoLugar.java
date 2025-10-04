@@ -2,16 +2,17 @@ public class TipoLugar {
     private String nombre;
 
     public TipoLugar() {}
+    
+    public TipoLugar(String nombre) {
+        this.nombre = nombre;
+    }
 
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
     
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
-    public void crear() {}
-    public void mostrar() {}
 }

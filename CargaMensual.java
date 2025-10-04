@@ -5,25 +5,28 @@ public class CargaMensual {
     private String mesVigencia;
 
     public CargaMensual(int número, String fechaYhora, double importe, String mesVigencia){
-        this.número = número;
-        this.fechaYhora = fechaYhora;
+        this.numero = número;
+        this.fechaYHora = fechaYhora;
         this.importe = importe;
         this.mesVigencia = mesVigencia;
     }
 
     // Getters
     public int getNumero() {
-        return numero;
+        return this.numero;
     }
 
     public String getFechaYHora() {
-        return fechaYHora;
+        return this.fechaYHora;
     }
 
     public double getImporte() {
-        return importe;
+        return this.importe;
     }
-
+    
+    public String getMesVigencia(){
+        return this.mesVigencia;
+    }
     // Setters
     public void setNumero(int numero) {
         this.numero = numero;
@@ -37,6 +40,7 @@ public class CargaMensual {
         this.importe = importe;
     }
 
-    public void crear() {}
-    public void mostrar() {}
+    public void setMesVigencia(String mesVigencia) {
+        this.mesVigencia = mesVigencia;
+    } 
 }

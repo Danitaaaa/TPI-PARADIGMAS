@@ -6,20 +6,27 @@ public class Lugar {
 
     public Lugar() {}
 
-        public int getNumero() {
-        return numero;
+       public Lugar(int numero, Estado estado, TipoLugar tipo, String fecha) {
+        this.numero= numero;
+        this.estado = estado;
+        this.tipo = tipo;
+        this.fecha= fecha;
+       }
+
+    public int getNumero() {
+        return this.numero;
     }
 
     public Estado getEstado() {
-        return estado;
+        return this.estado;
     }
 
     public TipoLugar getTipo() {
-        return tipo;
+        return this.tipo;
     }
 
     public String getFecha() {
-        return fecha;
+        return this.fecha;
     }
 
     // Setters
@@ -38,10 +45,7 @@ public class Lugar {
     public void setFecha(String fecha) {
         this.fecha = fecha;
     }
-    public void crear() {}
-    public void mostrar() {}
-    public Estado conocerEstado() { return null; }
-    public TipoLugar conocerTipoLugar() { return null; }
+
     public void liberarLugar() {}
     public void ocuparLugar() {}
  

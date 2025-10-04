@@ -1,50 +1,69 @@
+import java.util.ArrayList;
+
 public class Cuenta {
     private int numeroCuenta;
-    private UsuarioUtn titular;
+    private UsuarioUTN titular;
     private String fechaAlta;
     private String fechaBaja;
     private Vehiculo vehiculo;
     private TipoCuenta tipoCuenta;
     private TipoUsuario tipoUsuario;
-    private CargaMensual cargaMensual;
-    private CargaSaldo cargaSaldo;
+    private ArrayList<CargaMensual> cargaMensual;
+    private ArrayList<CargaSaldo> cargaSaldo;
 
     public Cuenta() {}
 
-     public int getNumeroCuenta() {
-        return numeroCuenta;
+    public Cuenta(int numeroCuenta, UsuarioUTN titular, String fechaAlta, String fechaBaja, Vehiculo vehiculo, TipoCuenta tipoCuenta) {
+        this.numeroCuenta = numeroCuenta;
+        this.titular = titular;
+        this.fechaAlta = fechaAlta;
+        this.fechaBaja = fechaBaja;
+        this.vehiculo = vehiculo;
+        this.tipoCuenta = tipoCuenta;
     }
 
-    public UsuarioUtn getTitular() {
-        return titular;
+    public void agregarCargaMensual(CargaMensual cargaMensual){
+        this.cargaMensual.add(cargaMensual);
+    }
+
+    public void agregarCargaSaldo(CargaSaldo cargaSaldo){
+        this.cargaSaldo.add(cargaSaldo);
+    }
+
+    public int getNumeroCuenta() {
+        return this.numeroCuenta;
+    }
+
+    public UsuarioUTN getTitular() {
+        return this.titular;
     }
 
     public String getFechaAlta() {
-        return fechaAlta;
+        return this.fechaAlta;
     }
 
     public String getFechaBaja() {
-        return fechaBaja;
+        return this.fechaBaja;
     }
 
     public Vehiculo getVehiculo() {
-        return vehiculo;
+        return this.vehiculo;
     }
 
     public TipoCuenta getTipoCuenta() {
-        return tipoCuenta;
+        return this.tipoCuenta;
     }
 
     public TipoUsuario getTipoUsuario() {
-        return tipoUsuario;
+        return this.tipoUsuario;
     }
 
-    public CargaMensual getCargaMensual() {
-        return cargaMensual;
+    public ArrayList<CargaMensual> getCargaMensual() {
+        return this.cargaMensual;
     }
 
-    public CargaSaldo getCargaSaldo() {
-        return cargaSaldo;
+    public ArrayList<CargaSaldo> getCargaSaldo() {
+        return this.cargaSaldo;
     }
 
     // Setters
@@ -52,7 +71,7 @@ public class Cuenta {
         this.numeroCuenta = numeroCuenta;
     }
 
-    public void setTitular(UsuarioUtn titular) {
+    public void setTitular(UsuarioUTN titular) {
         this.titular = titular;
     }
 
@@ -76,19 +95,6 @@ public class Cuenta {
         this.tipoUsuario = tipoUsuario;
     }
 
-    public void setCargaMensual(CargaMensual cargaMensual) {
-        this.cargaMensual = cargaMensual;
-    }
-
-    public void setCargaSaldo(CargaSaldo cargaSaldo) {
-        this.cargaSaldo = cargaSaldo;
-    }
-
-    public void crear() {}
-    public void mostrar() {}
-    public UsuarioUtn conocerTitular() { return null; }
-    public TipoUsuario conocerTipoUsuario() { return null; }
-    public TipoCuenta conocerTipoCuenta() { return null; }
     public void registrarCarga() {}
     public void registrarBaja() {}
 }

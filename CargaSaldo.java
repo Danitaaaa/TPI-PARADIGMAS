@@ -5,26 +5,26 @@ public class CargaSaldo {
     private TipoCarga tipoCarga;
 
     public CargaSaldo(int número, String fechaYhoraCarga, double importe, TipoCarga tipoCarga) {
-        this.número = número;
-        this.fechaYhoraCarga = fechaYhoraCarga;
+        this.numero = número;
+        this.fechaYHoraCarga = fechaYhoraCarga;
         this.importe = importe;
         this.tipoCarga = tipoCarga;
     }
 
-        public int getNumero() {
-        return numero;
+    public int getNumero() {
+        return this.numero;
     }
 
     public String getFechaYHoraCarga() {
-        return fechaYHoraCarga;
+        return this.fechaYHoraCarga;
     }
 
     public double getImporte() {
-        return importe;
+        return this.importe;
     }
 
     public TipoCarga getTipoCarga() {
-        return tipoCarga;
+        return this.tipoCarga;
     }
 
     // Setters
@@ -44,8 +44,6 @@ public class CargaSaldo {
         this.tipoCarga = tipoCarga;
     }
 
-    public void crear() {}
-    public void mostrar() {}
     public void acreditarSaldo() {}
     public void desacreditarSaldo() {}  
 }

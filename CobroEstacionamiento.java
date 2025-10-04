@@ -1,35 +1,46 @@
-public class CobroEstacionaminto {
+public class CobroEstacionamiento {
     private int numeroTransaccion;
-    private String fechaYHora;
+    private String fechaYHora;  //ver libreria fecha y hr
     private double importe;
     private Cuenta cuenta;
     private String dominio;
     private Tarifa tarifa;
 
-    //public CobroEstacionamiento() {}
+    public CobroEstacionamiento() {
+        
+    }
 
-        public int getNumeroTransaccion() {
-        return numeroTransaccion;
+    public CobroEstacionamiento(int numeroTransaccion, String fechaYHora, double importe, Cuenta cuenta,String dominio, Tarifa tarifa) {
+        this.numeroTransaccion =numeroTransaccion;
+        this.fechaYHora =fechaYHora;
+        this.importe = importe;
+        this.cuenta = cuenta;
+        this.dominio = dominio;
+        this.tarifa = tarifa;
+    }
+
+    public int getNumeroTransaccion() {
+        return this.numeroTransaccion;
     }
 
     public String getFechaYHora() {
-        return fechaYHora;
+        return this.fechaYHora;
     }
 
     public double getImporte() {
-        return importe;
+        return this.importe;
     }
 
     public Cuenta getCuenta() {
-        return cuenta;
+        return this.cuenta;
     }
 
     public String getDominio() {
-        return dominio;
+        return this.dominio;
     }
 
     public Tarifa getTarifa() {
-        return tarifa;
+        return this.tarifa;
     }
 
     public void setNumeroTransaccion(int numeroTransaccion) {
@@ -55,10 +66,5 @@ public class CobroEstacionaminto {
     public void setTarifa(Tarifa tarifa) {
         this.tarifa = tarifa;
     }
-
-    public void crear() {}
-    public void mostrar() {}
-    public Cuenta conocerCuenta() { return null; }
-    public Tarifa conocerTarifa() { return null; }
     public void registrarCobro() {}
 }

@@ -5,17 +5,22 @@ public class TipoUsuario {
 
     public TipoUsuario() {}
 
+    public TipoUsuario(String nombre, double porcentaje, Tarifa tarifa) {
+        this.nombre = nombre;
+        this.porcentaje = porcentaje;
+        this.tarifa = tarifa;
+    }
     // Getters
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
     public double getPorcentaje() {
-        return porcentaje;
+        return this.porcentaje;
     }
 
     public Tarifa getTarifa() {
-        return tarifa;
+        return this.tarifa;
     }
 
     // Setters
@@ -31,9 +36,9 @@ public class TipoUsuario {
         this.tarifa = tarifa;
     }
 
-    public void crear() {}
-    public void mostrar() {}
-    public Tarifa conocerTarifa() { return null; }
-    public double calcularImporteDiario() { return 0.0; }
-    public double calcularImporteMensual() { return 0.0; }
+    public double calcularImporteDiario() {
+        return 0.0; }
+
+    public double calcularImporteMensual() {
+        return 0.0; }
 }

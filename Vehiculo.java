@@ -10,36 +10,36 @@ public class Vehiculo {
 
     public Vehiculo() {}
 
-       public String getTarjetaVerde() {
-        return tarjetaVerde;
+    public String getTarjetaVerde() {
+        return this.tarjetaVerde;
     }
 
     public String getSeguro() {
-        return seguro;
+        return this.seguro;
     }
 
     public String getModelo() {
-        return modelo;
+        return this.modelo;
     }
 
     public String getMarca() {
-        return marca;
+        return this.marca;
     }
 
     public String getDominio() {
-        return dominio;
+        return this.dominio;
     }
 
     public String getFechaAlta() {
-        return fechaAlta;
+        return this.fechaAlta;
     }
 
     public String getFechaBaja() {
-        return fechaBaja;
+        return this.fechaBaja;
     }
 
     public EstadoVehiculo getEstado() {
-        return estado;
+        return this.estado;
     }
 
     // Setters
@@ -75,9 +75,6 @@ public class Vehiculo {
         this.estado = estado;
     }
 
-    public void crear() {}
-    public void mostrar() {}
-    public EstadoVehiculo conocerEstado() { return null; }
     public void registrarAlta() {}
     public void registrarBaja() {}
 }

@@ -9,13 +9,17 @@ public class Estacionamiento {
         cantidadLugares = 0;
     }
 
-
-        public ArrayList<Lugar> getLugares() {
-        return lugares;
+    public void agregarLugar(Lugar lugar) {
+        this.lugares.add(lugar);
     }
 
+    public ArrayList<Lugar> getLugares() {
+        return this.lugares;
+    }
+
+
     public int getCantidadLugares() {
-        return cantidadLugares;
+        return this.cantidadLugares;
     }
 
     // Setters
@@ -26,8 +30,6 @@ public class Estacionamiento {
     public void setCantidadLugares(int cantidadLugares) {
         this.cantidadLugares = cantidadLugares;
     }
-    public void crear() {}
-    public void mostrar() {}
-    public Lugar conocerLugar() { return null; }
+
     public int calcularCantidadLugaresDisponibles() { return 0; }
 }

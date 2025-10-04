@@ -9,32 +9,32 @@ public class IngresoEgreso {
 
     public IngresoEgreso() {}
 
-        public int getNumeroTransaccion() {
-        return numeroTransaccion;
+    public int getNumeroTransaccion() {
+       return this.numeroTransaccion;
     }
 
     public String getFechaYHoraIngreso() {
-        return fechaYHoraIngreso;
+        return this.fechaYHoraIngreso;
     }
 
     public String getFechaYHoraEgreso() {
-        return fechaYHoraEgreso;
+        return this.fechaYHoraEgreso;
     }
 
     public String getDominio() {
-        return dominio;
+        return this.dominio;
     }
 
-    public CobroEstacionaminto getCobro() {
-        return cobro;
+    public CobroEstacionamiento getCobro() {
+        return this.cobro;
     }
 
     public Lugar getLugar() {
-        return lugar;
+        return this.lugar;
     }
 
     public Cuenta getCuenta() {
-        return cuenta;
+        return this.cuenta;
     }
 
     // Setters
@@ -54,7 +54,7 @@ public class IngresoEgreso {
         this.dominio = dominio;
     }
 
-    public void setCobro(CobroEstacionaminto cobro) {
+    public void setCobro(CobroEstacionamiento cobro) {
         this.cobro = cobro;
     }
 
@@ -65,10 +65,7 @@ public class IngresoEgreso {
     public void setCuenta(Cuenta cuenta) {
         this.cuenta = cuenta;
     }
-    public void crear() {}
-    public void mostrar() {}
-    public CobroEstacionamiento conocerCobro() { return null; }
-    public Lugar conocerLugar() { return null; }
+
     public void registrarIngreso() {}
     public void registrarEgreso() {}
 }

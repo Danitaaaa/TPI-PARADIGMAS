@@ -1,21 +1,17 @@
 public class TipoCuenta {
-        private String nombre;
+    private String nombre;
 
-    public TipoCuenta() {
+    public TipoCuenta() {}
+    public TipoCuenta(String nombre) {
+        this.nombre = nombre;
     }
-
     // Getter
     public String getNombre() {
-        return nombre;
+        return this.nombre;
     }
 
     // Setter
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
-
-    public void crear() {
-    }
-
-    public void mostrar() {}
 }
