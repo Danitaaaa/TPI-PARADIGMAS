@@ -4,7 +4,12 @@ public class CargaSaldo {
     private double importe;
     private TipoCarga tipoCarga;
 
-    public CargaSaldo() {}
+    public CargaSaldo(int número, String fechaYhoraCarga, double importe, TipoCarga tipoCarga) {
+        this.número = número;
+        this.fechaYhoraCarga = fechaYhoraCarga;
+        this.importe = importe;
+        this.tipoCarga = tipoCarga;
+    }
 
         public int getNumero() {
         return numero;
